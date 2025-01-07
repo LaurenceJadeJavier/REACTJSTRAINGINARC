@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700,900");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Rubik";
+}
+
+.customTextInput {
+  @apply pointer-events-none absolute  left-2 top-3  -translate-y-1/2 transform   text-xs transition-all duration-300 group-focus-within:!top-3 group-focus-within:!text-xs group-focus-within:!text-primaryBlue  peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm;
+}
+
+.font11NormalNeutralGray {
+  @apply text-xs font-normal text-neutralGray;
+}
+
+.font14MediumNeutralDark {
+  @apply text-sm font-medium text-neutralDark;
+}
+
+.font14MediumNeutralGray {
+  @apply text-sm font-normal text-neutralGray;
+}
+
+.font16MediumNeutralDark {
+  @apply text-base font-medium text-neutralDark;
+}
+
+.font16NormalPrimaryBlue {
+  @apply text-sm font-normal text-primaryBlue;
+}
+
+.card {
+  @apply w-full rounded-xl bg-white p-5 drop-shadow-xl;
+}
+
+.customTableTitle {
+  @apply border border-blue-50 bg-blue-100 p-2 text-left text-sm font-medium text-primaryBlue;
+}
+
+.customTableAmount {
+  @apply border border-blue-50 bg-blue-100 p-2 text-right text-sm font-medium;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 0.2rem;
+}
+
+.mult-email-input__control {
+  @apply scrollbar-hidden max-h-12 w-full overflow-hidden overflow-y-scroll rounded-md border-none bg-transparent py-1 text-sm shadow-none focus:outline-none !important;
+}
+
+.fc .fc-button-primary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.fc .fc-button-primary:focus {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 0.2rem;
+}
+
+.fc .fc-button:focus {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 0.2rem;
+}
+
+.fc-next-button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.fc-prev-button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.fc-icon-chevron-left {
+  color: #0e7de1;
+}
+
+.fc-icon-chevron-right {
+  color: #0e7de1;
+}
+
+.fc-dayGridMonth-button {
+  color: #0e7de1 !important;
+  background-color: transparent !important;
+  border-color: #0e7de1 !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  font-weight: "500";
+}
+
+.fc-dayGridWeek-button {
+  color: #0e7de1 !important;
+  background-color: transparent !important;
+  border-color: #0e7de1 !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  font-weight: "500";
+}
+
+.fc-dayGridDay-button {
+  color: #0e7de1 !important;
+  background-color: transparent !important;
+  border-color: #0e7de1 !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.fc-toolbar-title {
+  font-size: 18px !important;
+  color: #0b1927;
+  font-weight: 500;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border-width: 1px !important;
+  border-color: #acd0f0 !important;
+  border-bottom-color: transparent !important;
+  border-left-color: #acd0f0 !important;
+  border-right-color: #acd0f0 !important;
+}
+
+.fc-theme-standard th {
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: #acd0f0 !important;
+}
+
+.fc-theme-standard td {
+  border-left-color: #acd0f0 !important;
+  border-right-color: #acd0f0 !important;
+  border-top-color: transparent !important;
+  border-bottom-color: #acd0f0 !important;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: 14px !important;
+  font-weight: 600;
+  color: #0e7de1 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.fc .fc-daygrid-day-top {
+  flex-direction: row !important;
+}
+
+.fc-daygrid-day-number {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  color: #f0f6fc !important;
+  background-color: #0e7de1 !important;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #0e7de1 !important;
+}
+
+.react-datepicker__header {
+  border-bottom: 0px !important;
+  background-color: transparent !important;
+}
+
+.react-datepicker {
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem !important;
+}
+
+.fc-h-event {
+  border: 0 !important;
+  border-radius: 10px !important;
+}
+
+/* search bar css */
+.searchcontainer {
+  position: relative;
+  --size-button: 3rem;
+  color: white;
+}
+
+.searchinput {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 1rem;
+  border: none;
+  color: #0b1927;
+  outline: none;
+  width: 0;
+  transition: all ease 0.5s;
+  background-color: #f0f6fc;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.searchinput:focus,
+.searchinput:not(:invalid) {
+  width: 20rem;
+  cursor: text;
+  padding-right: 0.75rem;
+}
+
+.searchcontainer .searchicon .searchiconclear {
+  display: none;
+}
+
+.searchinput:focus + .searchicon .searchiconclear {
+  display: block;
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 0.35rem;
+  right: 0.35rem;
+  padding: 0.5rem;
+}
+
+.searchinput:focus + .searchicon,
+.searchinput:not(:invalid) + .searchicon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.searchcontainer .searchicon .search {
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 0.35rem;
+  left: 0.35rem;
+  padding: 0.5rem;
+  pointer-events: none;
+}
